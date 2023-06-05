@@ -340,6 +340,10 @@ ul.timeline>li.disqualified:before {
         display: none !important;
     }
 
+    .title-dekstop {
+        display: none !important;
+    }
+
     .circle-element {
         display: none !important;
     }
