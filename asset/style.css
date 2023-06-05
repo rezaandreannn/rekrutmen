@@ -79,19 +79,55 @@ body {
     box-shadow: 0 2px 4px rgba(144, 238, 144, 0.5);
 }
 
+
+
+
+.garis {
+    position: relative;
+    height: 2px;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.garis:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 50%;
+    transform: scaleX(0.5) translateY(-50%);
+}
+
+.garis:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #000;
+    border-radius: 50% 0 0 50%;
+    transform: scaleX(0.5) translateY(-50%);
+}
+
+
 @keyframes wave {
     0% {
-        transform: translateX(0);
+        transform: scaleX(0);
     }
 
     50% {
-        transform: translateX(25px);
+        transform: scaleX(1);
     }
 
     100% {
-        transform: translateX(0);
+        transform: scaleX(0);
     }
 }
+
 
 
 
